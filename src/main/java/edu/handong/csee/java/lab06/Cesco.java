@@ -31,17 +31,6 @@ public class Cesco {//class name
 		double totalBugVolume = population * ONE_BUG_VOLUME;//the value of totalBugVolume equals to population * ONE_BUG_VOLUME
 		int countWeeks = 0;//the value of countWeeks is zero 
 		
-		while(totalBugVolume<houseVolume) {//infinite loop
-			double newBugs = population*GROWTH_RATE;//the value of newBugs equals to population * GROWTH_RATE
-			double newBugVolume = newBugs *ONE_BUG_VOLUME;//the value of newBugVolume equals to new * ONE_BUG_VOLUME
-			population = population +newBugs;// the value of population equals to population + newBugs
-			totalBugVolume = population *ONE_BUG_VOLUME;//the value of totalBugVolume equals to population * ONE_BUG_VOLUME
-			countWeeks = countWeeks+1;// ++count
-		}
-		System.out.println("and a house with a volume of "+ houseVolume +"cubic feet, after" + countWeeks +"weeks");//print out the value of house volume
-		System.out.println("the house will be filled with " + (int)population + "cubic feet.");//print out the population's value of int type
-		System.out.println("They will fill a volume of "+(int)totalBugVolume+"cubic feet." );//print out the totalBugVolume's value of int type
-		System.out.println("Better call Debugging Experts Inc.");//print out
 	}
 
 	}
