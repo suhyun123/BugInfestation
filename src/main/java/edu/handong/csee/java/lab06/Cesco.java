@@ -23,6 +23,14 @@ public class Cesco {//class name
 		Scanner input = new Scanner(System.in);// produce Scanner to receive input value
 	
 		
+		System.out.println("Enter the total volume of your house in cubic feet");//print out
+		double houseVolume = input.nextDouble();// receive the value of double type variable
+		System.out.println("Enter the estimated number of roaches in your house");//print out
+		double startPopulation = input.nextDouble();//receive the value of double type variable
+		double population = startPopulation;//the value of population equals to startPopulaton
+		System.out.println("Starting with a roach population of" + startPopulation+"\n");//print out
+		double totalBugVolume = population * ONE_BUG_VOLUME;//the value of totalBugVolume equals to population * ONE_BUG_VOLUME
+		int countWeeks = 0;//the value of countWeeks is zero 
 		
 		while(totalBugVolume<houseVolume) {//infinite loop
 			double newBugs = population*GROWTH_RATE;//the value of newBugs equals to population * GROWTH_RATE
